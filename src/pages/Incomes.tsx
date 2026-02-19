@@ -31,7 +31,7 @@ function Incomes() {
     setCategory(incomesItem?.category);
     setDescription(incomesItem?.description);
   }, [incomesItem]);
-    console.log(setExpenseItem)
+  console.log(setExpenseItem);
   return (
     <div className="flex flex-col w-full min-h-full p-10">
       <div
@@ -166,9 +166,9 @@ function Incomes() {
         description={description}
       />
       <ToastContainer />
-        <footer className="flex justify-center mt-10 text-gray-500">
-            Copyright © CashControl 2011 - 2026.
-        </footer>
+      <footer className="flex justify-center mt-10 text-gray-500">
+        Copyright © CashControl 2011 - 2026.
+      </footer>
     </div>
   );
 }

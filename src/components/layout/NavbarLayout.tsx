@@ -1,4 +1,4 @@
-import {type ReactNode} from "react";
+import { type ReactNode } from "react";
 import NavBar from "../NavBar.tsx";
 import LeftSideNavbar from "../LeftSideNavbar.tsx";
 import {
@@ -17,7 +17,6 @@ interface NavbarLayoutProps {
 }
 
 function NavbarLayout({ showNavbar, children }: NavbarLayoutProps) {
-
   const icons = [
     {
       id: "Dashboard",

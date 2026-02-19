@@ -1,6 +1,7 @@
 import { useUserStore } from "../stores/useUserStore.ts";
 import {
-  Award, Bookmark,
+  Award,
+  Bookmark,
   EyeIcon,
   EyeOff,
   KeyRound,
@@ -9,7 +10,7 @@ import {
   Settings,
   User2Icon,
 } from "lucide-react";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import UserEditSheet from "../components/slide-over/UserEditSheet.tsx";
 
 function UserPage() {
@@ -19,15 +20,15 @@ function UserPage() {
   const [isName, setIsName] = useState(false);
   const [password, setPassword] = useState<string | undefined>("");
   const [confirmPass, setConfirmPass] = useState("");
-  const [name, setName] = useState<string | undefined>("")
-  const [username, setUsername] = useState<string | undefined>("")
+  const [name, setName] = useState<string | undefined>("");
+  const [username, setUsername] = useState<string | undefined>("");
   const [isUsername, setIsUsername] = useState(false);
   const { user } = useUserStore();
-    useEffect(() => {
-        setPassword(user?.password)
-        setName(user?.firstName)
-      setUsername(user?.userName)
-    }, [user]);
+  useEffect(() => {
+    setPassword(user?.password);
+    setName(user?.firstName);
+    setUsername(user?.userName);
+  }, [user]);
   return (
     <div className="flex flex-col min-w-full h-full p-15">
       <div
@@ -60,7 +61,7 @@ function UserPage() {
                   <input
                     type={`${showPassword ? "text" : "password"}`}
                     value={user?.password}
-                    onChange={() =>{}}
+                    onChange={() => {}}
                   />
                 </span>
               </div>
@@ -115,7 +116,7 @@ function UserPage() {
                 setOpen(true);
                 setIsPassword(false);
                 setIsName(true);
-                setIsUsername(false)
+                setIsUsername(false);
               }}
               className="w-8 h-8 hover:bg-gray-200 hover:text-blue-400 rounded-lg transition-all cursor-pointer flex justify-center items-center"
             >
@@ -126,7 +127,7 @@ function UserPage() {
       </div>
 
       <div
-          className={`flex flex-col min-w-full h-42 border bg-white mt-5 border-gray-200 shadow-xl rounded-xl dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500`}
+        className={`flex flex-col min-w-full h-42 border bg-white mt-5 border-gray-200 shadow-xl rounded-xl dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500`}
       >
         <div className="flex w-full p-8 gap-8 items-center h-16 border border-gray-300 border-t-0 border-l-0 border-r-0">
           <span>
@@ -138,27 +139,28 @@ function UserPage() {
         <div className="flex justify-between w-full p-8 gap-8 items-center">
           <div className="flex items-center gap-8">
             <span>
-              <Bookmark/>
+              <Bookmark />
             </span>
             <div className="flex flex-col">
               <span className="text-sm">Username</span>
-              <span className="flex font-semibold text-sm">{user?.userName}</span>
+              <span className="flex font-semibold text-sm">
+                {user?.userName}
+              </span>
             </div>
           </div>
           <div className="flex flex-row gap-3">
             <span
-                onClick={() => {
-                  setOpen(true);
-                  setIsPassword(false);
-                  setIsName(false);
-                  setIsUsername(true)
-                }}
-                className="w-8 h-8 hover:bg-gray-200 hover:text-blue-400 rounded-lg transition-all cursor-pointer flex justify-center items-center"
+              onClick={() => {
+                setOpen(true);
+                setIsPassword(false);
+                setIsName(false);
+                setIsUsername(true);
+              }}
+              className="w-8 h-8 hover:bg-gray-200 hover:text-blue-400 rounded-lg transition-all cursor-pointer flex justify-center items-center"
             >
-                <Pencil size={20} />
-              </span>
+              <Pencil size={20} />
+            </span>
           </div>
-
         </div>
       </div>
       <UserEditSheet

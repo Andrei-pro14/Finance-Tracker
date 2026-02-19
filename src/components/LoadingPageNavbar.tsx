@@ -5,7 +5,7 @@ import { useUserStore } from "../stores/useUserStore.ts";
 function LoadingPageNavbar() {
   const navigate = useNavigate();
   const token = localStorage.getItem("userToken");
-    const { user} = useUserStore();
+  const { user } = useUserStore();
 
   return (
     <div className="mx-auto max-w-screen-lg h-[60px] flex flex-row items-center justify-between w-full ">

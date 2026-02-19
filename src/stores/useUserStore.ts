@@ -17,11 +17,11 @@ export const useUserStore = create<UseUserStoreProps>()(
   persist(
     (set) => ({
       user: null,
-      setUser: (user) => set({user}),
-        editUser: (updateUser) =>
-            set((state) => ({
-                user: state.user ? {...state.user, ...updateUser} : null
-            })),
+      setUser: (user) => set({ user }),
+      editUser: (updateUser) =>
+        set((state) => ({
+          user: state.user ? { ...state.user, ...updateUser } : null,
+        })),
     }),
     {
       name: "expense-storage",

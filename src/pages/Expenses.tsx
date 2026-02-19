@@ -37,7 +37,7 @@ function Expenses() {
     setCategory(expenseItem?.category);
     setDescription(expenseItem?.description);
   }, [expenseItem]);
-    console.log(setIncomesItem);
+  console.log(setIncomesItem);
   return (
     <div className="flex flex-col w-full min-h-full p-10">
       <div

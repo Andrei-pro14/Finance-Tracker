@@ -6,19 +6,37 @@ body {
   font-weight: 400;
   font-family: Roboto, Arial, sans-serif;
 }
-.align-computer-container{
+.align-computer-container {
+  @media (min-height: 800px) {
+    padding-top: 12%;
+  }
   @media (height: 1080px) {
     padding-top: 334px;
   }
+  @media (height: 953px) {
+    padding-top: 207px;
+  }
 }
-.align-laptop-container{
+.align-laptop-container {
+  @media (min-height: 800px) {
+    padding-top: 1%;
+  }
   @media (height: 1080px) {
     padding-top: 224px;
   }
+  @media (height: 953px) {
+    padding-top: 97px;
+  }
 }
-.align-phone-container{
+.align-phone-container {
+  @media (min-height: 700px) {
+    padding-top: 27%;
+  }
   @media (height: 1080px) {
     padding-top: 373px;
+  }
+  @media (height: 953px) {
+    padding-top: 246px;
   }
   @media (width < 631px) {
     padding-bottom: 80px;
