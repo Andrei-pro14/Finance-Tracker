@@ -31,7 +31,7 @@ function Incomes() {
     setCategory(incomesItem?.category);
     setDescription(incomesItem?.description);
   }, [incomesItem]);
-
+    console.log(setExpenseItem)
   return (
     <div className="flex flex-col w-full min-h-full p-10">
       <div
