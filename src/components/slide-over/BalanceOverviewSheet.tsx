@@ -100,7 +100,7 @@ export default function BalanceOverviewSheet({
                           <div className="w-full h-px bg-[#E0E0E0] mt-4" />
                         </div>
 
-                        <div className="flex flex-col">
+                        <div className="flex flex-col dark:text-black transition-colors duration-500">
                           <h1 className="flex font-bold text-xl">Balance</h1>
 
                           <div className="flex w-full justify-between items-center">
