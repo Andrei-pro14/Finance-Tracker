@@ -1,0 +1,100 @@
+{
+  "user": [
+    {
+      "id": "f17d",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "Andrei123",
+      "gmail": "moisiucandrei06@gmail.com",
+      "phoneNumber": "076898583"
+    },
+    {
+      "id": "df52",
+      "firstName": "Misa",
+      "lastName": "Eminescu",
+      "userName": "MIhailovici",
+      "gmail": "mihai123@gmail.com",
+      "phoneNumber": "076898587"
+    },
+    {
+      "id": "bb12",
+      "firstName": "1234",
+      "lastName": "1234",
+      "userName": "1245151",
+      "gmail": "12414123@gmail.com",
+      "phoneNumber": ""
+    },
+    {
+      "id": "dc92",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "andrygammer123",
+      "gmail": "andrei123@gmail.com",
+      "phoneNumber": ""
+    },
+    {
+      "id": "3ae4",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "Legendary012",
+      "gmail": "andrei1234@gmail.com",
+      "phoneNumber": ""
+    },
+    {
+      "id": "e4a9",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "andrei123",
+      "gmail": "adnrei1234@gmail.com",
+      "phoneNumber": ""
+    },
+    {
+      "id": "1550",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "andrei1236",
+      "gmail": "andrei12345@gmail.com",
+      "phoneNumber": ""
+    },
+    {
+      "id": "3189",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "andrei_meme123",
+      "gmail": "andrei1237@gmail.com",
+      "password": "123456789",
+      "confirmPass": "123456789",
+      "phoneNumber": ""
+    },
+    {
+      "id": "3c92",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "legendary1234",
+      "gmail": "andrei12349@gmail.com",
+      "password": "1234567",
+      "confirmPass": "1234567",
+      "phoneNumber": ""
+    },
+    {
+      "id": "2235",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "Ultra_Meme123!",
+      "gmail": "meme1234@gmail.com",
+      "password": "1234",
+      "confirmPass": "1234",
+      "phoneNumber": ""
+    },
+    {
+      "id": "a1d7",
+      "firstName": "Mihai",
+      "lastName": "Eminescu",
+      "userName": "mihaita12345",
+      "gmail": "mihaita54@gmail.com",
+      "password": "avn19p3l0783lv",
+      "confirmPass": "avn19p3l0783lv",
+      "phoneNumber": ""
+    }
+  ]
+}

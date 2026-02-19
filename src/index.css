@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
+}
+.align-computer-container{
+  @media (height: 1080px) {
+    padding-top: 334px;
+  }
+}
+.align-laptop-container{
+  @media (height: 1080px) {
+    padding-top: 224px;
+  }
+}
+.align-phone-container{
+  @media (height: 1080px) {
+    padding-top: 373px;
+  }
+  @media (width < 631px) {
+    padding-bottom: 80px;
+  }
+}
