@@ -147,8 +147,8 @@ export default function Sheet({
                           />
                         </div>
 
-                        <div className="flex flex-col py-6">
-                          <legend className="px-1">Category</legend>
+                        <div className="flex flex-col py-6 ">
+                          <legend className="px-1 ">Category</legend>
                           <Select
                             name="status"
                             aria-label="Project status"
@@ -156,32 +156,34 @@ export default function Sheet({
                             onChange={(e) => setCategory(e.target.value)}
                             className="w-100 h-15 border outline-none p-2 text-xl  rounded-xl"
                           >
-                            <optgroup label="None">
-                              <option value="No Category">No Category</option>
-                            </optgroup>
+                            <div className="dark:text-black transition-colors duration-500">
+                              <optgroup label="None">
+                                <option value="No Category">No Category</option>
+                              </optgroup>
 
-                            <optgroup label="Home">
-                              <option value="Utilities">Utilities</option>
-                              <option value="Phone & Internet">
-                                Phone & Internet
-                              </option>
-                            </optgroup>
-                            <optgroup label="Shopping">
-                              <option value="Cleaning">Cleaning</option>
-                              <option value="Clothing">Clothing</option>
-                            </optgroup>
+                              <optgroup label="Home">
+                                <option value="Utilities">Utilities</option>
+                                <option value="Phone & Internet">
+                                  Phone & Internet
+                                </option>
+                              </optgroup>
+                              <optgroup label="Shopping">
+                                <option value="Cleaning">Cleaning</option>
+                                <option value="Clothing">Clothing</option>
+                              </optgroup>
 
-                            <optgroup label="Fun">
-                              <option value="Restaurant">Restaurant</option>
-                              <option value="Streaming">Streaming</option>
-                              <option value="Sport">Sport</option>
-                            </optgroup>
+                              <optgroup label="Fun">
+                                <option value="Restaurant">Restaurant</option>
+                                <option value="Streaming">Streaming</option>
+                                <option value="Sport">Sport</option>
+                              </optgroup>
 
-                            <optgroup label="Car">
-                              <option value="Fuel">Fuel</option>
-                              <option value="Insurance">Insurance</option>
-                              <option value="Tolls">Tolls</option>
-                            </optgroup>
+                              <optgroup label="Car">
+                                <option value="Fuel">Fuel</option>
+                                <option value="Insurance">Insurance</option>
+                                <option value="Tolls">Tolls</option>
+                              </optgroup>
+                            </div>
                           </Select>
                         </div>
                         <div className="flex flex-col py-2">
@@ -250,32 +252,34 @@ export default function Sheet({
                             onChange={(e) => setCategory(e.target.value)}
                             className="w-100 h-15 border outline-none p-2 text-xl  rounded-xl"
                           >
-                            <optgroup label="None">
-                              <option value="No Category">No Category</option>
-                            </optgroup>
+                            <div className="dark:text-black transition-colors duration-500">
+                              <optgroup label="None">
+                                <option value="No Category">No Category</option>
+                              </optgroup>
 
-                            <optgroup label="Home">
-                              <option value="Utilities">Utilities</option>
-                              <option value="Phone & Internet">
-                                Phone & Internet
-                              </option>
-                            </optgroup>
-                            <optgroup label="Shopping">
-                              <option value="Cleaning">Cleaning</option>
-                              <option value="Clothing">Clothing</option>
-                            </optgroup>
+                              <optgroup label="Home">
+                                <option value="Utilities">Utilities</option>
+                                <option value="Phone & Internet">
+                                  Phone & Internet
+                                </option>
+                              </optgroup>
+                              <optgroup label="Shopping">
+                                <option value="Cleaning">Cleaning</option>
+                                <option value="Clothing">Clothing</option>
+                              </optgroup>
 
-                            <optgroup label="Fun">
-                              <option value="Restaurant">Restaurant</option>
-                              <option value="Streaming">Streaming</option>
-                              <option value="Sport">Sport</option>
-                            </optgroup>
+                              <optgroup label="Fun">
+                                <option value="Restaurant">Restaurant</option>
+                                <option value="Streaming">Streaming</option>
+                                <option value="Sport">Sport</option>
+                              </optgroup>
 
-                            <optgroup label="Car">
-                              <option value="Fuel">Fuel</option>
-                              <option value="Insurance">Insurance</option>
-                              <option value="Tolls">Tolls</option>
-                            </optgroup>
+                              <optgroup label="Car">
+                                <option value="Fuel">Fuel</option>
+                                <option value="Insurance">Insurance</option>
+                                <option value="Tolls">Tolls</option>
+                              </optgroup>
+                            </div>
                           </Select>
                         </div>
                         <div className="flex flex-col py-2">
