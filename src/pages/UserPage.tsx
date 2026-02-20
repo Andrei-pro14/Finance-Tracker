@@ -29,6 +29,7 @@ function UserPage() {
     setName(user?.firstName);
     setUsername(user?.userName);
   }, [user]);
+  console.log(user?.password);
   return (
     <div className="flex flex-col min-w-full h-full p-15">
       <div

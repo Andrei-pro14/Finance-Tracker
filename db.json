@@ -145,6 +145,36 @@
       "password": "asd",
       "confirmPass": "asd",
       "phoneNumber": ""
+    },
+    {
+      "id": "edb0",
+      "firstName": "asdf",
+      "lastName": "asdf",
+      "userName": "asdfg",
+      "gmail": "asdfg@gmail.com",
+      "password": "7GhTdxJ4mBnWcg2",
+      "confirmPass": "7GhTdxJ4mBnWcg2",
+      "phoneNumber": ""
+    },
+    {
+      "id": "48de",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "asdfas",
+      "gmail": "asdfgas@gmail.com",
+      "password": "asd",
+      "confirmPass": "asd",
+      "phoneNumber": ""
+    },
+    {
+      "id": "c579",
+      "firstName": "Mihailean123",
+      "lastName": "asd",
+      "userName": "Andrei1234",
+      "gmail": "asdasda@gmail.com",
+      "password": "4120000",
+      "confirmPass": "4120000",
+      "phoneNumber": ""
     }
   ]
 }

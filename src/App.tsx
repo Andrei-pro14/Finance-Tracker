@@ -9,14 +9,18 @@ function App() {
   const { user, setUser } = useUserStore();
   useEffect(() => {
     const API_URL = import.meta.env.VITE_API_URL;
-    fetch(`${API_URL}/user`)
+    fetch(`${API_URL}/user/${user?.id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(user),
+    })
       .then((res) => res.json())
       .then((data) => {
-        setUser(data[data.length - 1]);
+        setUser(data);
       });
   }, []);
   const darkMode = localStorage.getItem("dark");
-
+  console.log("http://localhost:5000/user/c579");
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -24,7 +28,7 @@ function App() {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
-  console.log(user);
+
   return (
     <div>
       <AuthGuard />
