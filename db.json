@@ -135,6 +135,16 @@
       "password": "1234",
       "confirmPass": "1234",
       "phoneNumber": ""
+    },
+    {
+      "id": "59b9",
+      "firstName": "Andrei",
+      "lastName": "Moisiuc",
+      "userName": "asdfa",
+      "gmail": "asdfas@gmail.com",
+      "password": "asd",
+      "confirmPass": "asd",
+      "phoneNumber": ""
     }
   ]
 }

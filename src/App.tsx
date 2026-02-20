@@ -8,7 +8,8 @@ import { useEffect } from "react";
 function App() {
   const { user, setUser } = useUserStore();
   useEffect(() => {
-    fetch("http://localhost:5000/user")
+    const API_URL = import.meta.env.VITE_API_URL;
+    fetch(`${API_URL}/user`)
       .then((res) => res.json())
       .then((data) => {
         setUser(data[data.length - 1]);
