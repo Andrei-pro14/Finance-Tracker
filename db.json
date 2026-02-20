@@ -105,6 +105,36 @@
       "password": "avn19p3l0783lv",
       "confirmPass": "avn19p3l0783lv",
       "phoneNumber": ""
+    },
+    {
+      "id": "1926",
+      "firstName": "Mihai",
+      "lastName": "Icarioc",
+      "userName": "mihaita123",
+      "gmail": "mihaiicarioc@gmail.com",
+      "password": "YBh7KkScWdcm7Ec",
+      "confirmPass": "YBh7KkScWdcm7Ec",
+      "phoneNumber": ""
+    },
+    {
+      "id": "e21f",
+      "firstName": "sadf",
+      "lastName": "asf",
+      "userName": "asdf",
+      "gmail": "asdf@gmail.com",
+      "password": "123",
+      "confirmPass": "123",
+      "phoneNumber": ""
+    },
+    {
+      "id": "2384",
+      "firstName": "asd",
+      "lastName": "asd",
+      "userName": "asd",
+      "gmail": "asd@gmail.com",
+      "password": "1234",
+      "confirmPass": "1234",
+      "phoneNumber": ""
     }
   ]
 }
