@@ -1,7 +1,6 @@
 
 import {useEffect, useState} from "react";
 import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
 import { createUserWithEmailAndPassword, updateProfile,} from "firebase/auth";
 import {auth} from "../firebase.ts"
 import {useUserStore} from "../stores/useUserStore.ts";
@@ -19,8 +18,6 @@ function RegisterBox() {
      const [userCredentials, setUserCredentials] = useState<any>()
     const [error, setError] = useState<any>()
     const [error2, setError2] = useState<any>()
-
-    toast.error("Password doesn’t match with the Confirm Password");
 
   const handleRegister = async (email:string, password:string) => {
       try{
@@ -148,7 +145,6 @@ function RegisterBox() {
       >
         Register
       </button>
-      <ToastContainer />
     </div>
   );
 }

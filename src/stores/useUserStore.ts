@@ -8,10 +8,6 @@ interface UseUserStoreProps {
   editUser: (updateUser: Partial<UserData>) => void;
 }
 
-// export const useUserStore = create<UseUserStoreProps>((set) =>({
-//     user:[],
-//     setUser: (userData: UserData[]) => set(({user: userData}))
-// }))
 
 export const useUserStore = create<UseUserStoreProps>()(
   persist(
