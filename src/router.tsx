@@ -1,6 +1,6 @@
 import LoadingPage from "./pages/LoadingPage.tsx";
 import DashboardPage from "./pages/DashboardPage.tsx";
-import LoginPage from "./pages/LoginPage.tsx";
+import RegisterPage from "./pages/RegisterPage.tsx";
 import UserPage from "./pages/UserPage.tsx";
 import Expenses from "./pages/Expenses.tsx";
 import Incomes from "./pages/Incomes.tsx";
@@ -20,8 +20,8 @@ const route = [
     showNavbar: true,
   },
   {
-    path: "/login",
-    element: <LoginPage />,
+    path: "/register",
+    element: <RegisterPage />,
     showNavbar: false,
   },
   {

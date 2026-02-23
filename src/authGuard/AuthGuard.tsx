@@ -14,9 +14,9 @@ function AuthGuard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const token = localStorage.getItem("userToken");
+    const token = localStorage.getItem("accessToken");
     if (!token && authPage.includes(window.location.pathname)) {
-      navigate("/login");
+      navigate("/register");
     }
   }, [window.location.pathname]);
   return null;

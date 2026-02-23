@@ -64,7 +64,7 @@ export default function LogOutDialog({
                   </button>
                   <button
                     onClick={() => {
-                      localStorage.removeItem("userToken");
+                      localStorage.removeItem("accessToken");
                       localStorage.removeItem("expense-storage");
                       navigate("/");
                     }}

@@ -17,12 +17,8 @@ export interface IncomesData {
   isIncome: boolean;
 }
 export interface UserData {
-  id: string;
-  firstName: string;
-  lastName: string;
-  userName: string;
-  gmail: string;
-  password: string;
-  confirmPass: string;
-  phoneNumber: number;
+  username: string | null;
+  email: string | null;
+  password?: string | null;
+  confirmPass?: string | null;
 }

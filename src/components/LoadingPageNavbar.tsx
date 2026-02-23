@@ -4,7 +4,7 @@ import { useUserStore } from "../stores/useUserStore.ts";
 
 function LoadingPageNavbar() {
   const navigate = useNavigate();
-  const token = localStorage.getItem("userToken");
+  const token = localStorage.getItem("accessToken");
   const { user } = useUserStore();
 
   return (
@@ -25,13 +25,13 @@ function LoadingPageNavbar() {
         >
           <User2Icon />{" "}
           <p>
-            {user?.firstName} {user?.lastName}
+            {user?.userName}
           </p>
         </button>
       ) : (
         <button
           onClick={() => {
-            navigate("/login");
+            navigate("/register");
           }}
           className="flex px-4 py-2 rounded-4xl font-bold hover:bg-[#FFCD1D] hover:cursor-pointer hover:scale-98 bg-white border border-gray-200 dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500"
         >

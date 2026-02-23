@@ -8,7 +8,7 @@ function Settings() {
     const saved = localStorage.getItem("dark");
     return saved && JSON.parse(saved);
   });
-
+  console.log(enabled);
   useEffect(() => {
     localStorage.setItem("dark", JSON.stringify(enabled));
 
@@ -17,6 +17,7 @@ function Settings() {
     } else {
       document.documentElement.classList.remove("dark");
     }
+    console.log(localStorage.getItem("dark"));
   }, [enabled]);
 
   return (

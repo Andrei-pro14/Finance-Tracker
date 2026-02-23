@@ -1,4 +1,4 @@
-function IntroductionLoginPage() {
+function IntroductionRegisterPage() {
   return (
     <div className="flex w-full min-h-22 md:w-full md:min-h-80 lg:max-w-6/12 lg:min-h-dvh bg-[#16120A] justify-center items-center flex-col">
       <div className="hidden lg:block md:block justify-center items-center">
@@ -20,4 +20,4 @@ function IntroductionLoginPage() {
     </div>
   );
 }
-export default IntroductionLoginPage;
+export default IntroductionRegisterPage;

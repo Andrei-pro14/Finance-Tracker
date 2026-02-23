@@ -27,8 +27,8 @@ export default function DropdownMenu() {
         >
           <MenuItem>
             <div className="flex flex-col p-2">
-              <h1 className="flex font-semibold">{user?.firstName}</h1>
-              <span className="flex text-gray-500">{user?.gmail}</span>
+              <h1 className="flex font-semibold">{user?.username}</h1>
+              <span className="flex text-gray-500">{user?.email}</span>
             </div>
           </MenuItem>
           <div className="my-1 h-px bg-gray-300" />

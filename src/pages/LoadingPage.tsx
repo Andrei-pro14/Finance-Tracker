@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function LoadingPage() {
   const navigate = useNavigate();
-  const token = localStorage.getItem("userToken");
+  const token = localStorage.getItem("accessToken");
 
   return (
     <div className="min-w-full min-h-dvh relative bg-[#000000] overflow-hidden">
@@ -43,7 +43,7 @@ function LoadingPage() {
         ) : (
           <button
             onClick={() => {
-              navigate("/login");
+              navigate("/register");
             }}
             className="flex w-full md:px-4 py-2 md:w-auto justify-center cursor-pointer items-center font-bold text-lg rounded-4xl bg-[#FFCD1D]"
           >

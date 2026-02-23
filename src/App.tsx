@@ -6,21 +6,8 @@ import { useUserStore } from "./stores/useUserStore.ts";
 import { useEffect } from "react";
 
 function App() {
-  const { user, setUser } = useUserStore();
-  useEffect(() => {
-    const API_URL = import.meta.env.VITE_API_URL;
-    fetch(`${API_URL}/user/${user?.id}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(user),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setUser(data);
-      });
-  }, []);
+
   const darkMode = localStorage.getItem("dark");
-  console.log("http://localhost:5000/user/c579");
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -29,6 +16,14 @@ function App() {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem("dark");
+    if (isDarkMode === "true") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
   return (
     <div>
       <AuthGuard />
