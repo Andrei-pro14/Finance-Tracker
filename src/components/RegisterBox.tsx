@@ -20,11 +20,6 @@ function RegisterBox() {
     const [error, setError] = useState<any>()
     const [error2, setError2] = useState<any>()
 
-
-
-  const notity = () => toast.error("Already exist this user");
-  const gmailError = () => toast.error("Gmail must contain @ and gmail.com");
-  const confirmPassError = () =>
     toast.error("Password doesn’t match with the Confirm Password");
 
   const handleRegister = async (email:string, password:string) => {

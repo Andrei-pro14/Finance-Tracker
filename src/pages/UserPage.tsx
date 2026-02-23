@@ -1,28 +1,16 @@
 import { useUserStore } from "../stores/useUserStore.ts";
 import {
-  Award,
   Bookmark,
-  EyeIcon,
-  EyeOff,
-  KeyRound,
   Mail,
   Pencil,
   Settings,
-  User2Icon,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import UserEditSheet from "../components/slide-over/UserEditSheet.tsx";
 
 function UserPage() {
-  const [showPassword, setShowPassword] = useState(false);
   const [open, setOpen] = useState(false);
-  const [isPassword, setIsPassword] = useState(false);
-  const [isName, setIsName] = useState(false);
-  const [password, setPassword] = useState<string | undefined>("");
-  const [confirmPass, setConfirmPass] = useState("");
-  const [name, setName] = useState<string | undefined>("");
   const [username, setUsername] = useState<string | undefined | null>("");
-  const [isUsername, setIsUsername] = useState(false);
   const { user } = useUserStore();
   useEffect(() => {
     setUsername(user?.username);
@@ -61,9 +49,6 @@ function UserPage() {
             <span
                 onClick={() => {
                   setOpen(true);
-                  setIsPassword(false);
-                  setIsName(false);
-                  setIsUsername(false);
                 }}
                 className="w-8 h-8 hover:bg-gray-200 hover:text-blue-400 rounded-lg transition-all cursor-pointer flex justify-center items-center"
             >
@@ -75,17 +60,8 @@ function UserPage() {
       <UserEditSheet
         open={open}
         setOpen={setOpen}
-        isPassword={isPassword}
-        isName={isName}
-        password={password}
-        setPassword={setPassword}
-        confirmPass={confirmPass}
-        setConfirmPass={setConfirmPass}
-        name={name}
-        setName={setName}
         setUsername={setUsername}
         username={username}
-        isUsername={isUsername}
       />
       <footer className="flex justify-center mt-10 text-gray-500">
         Copyright © CashControl 2011 - 2026.

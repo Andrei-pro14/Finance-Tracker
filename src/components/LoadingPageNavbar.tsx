@@ -25,7 +25,7 @@ function LoadingPageNavbar() {
         >
           <User2Icon />{" "}
           <p>
-            {user?.userName}
+            {user?.username}
           </p>
         </button>
       ) : (

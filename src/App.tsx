@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import route from "./router.tsx";
 import NavbarLayout from "./components/layout/NavbarLayout.tsx";
 import AuthGuard from "./authGuard/AuthGuard.tsx";
-import { useUserStore } from "./stores/useUserStore.ts";
 import { useEffect } from "react";
 
 function App() {

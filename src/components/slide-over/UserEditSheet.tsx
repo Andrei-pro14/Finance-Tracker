@@ -7,9 +7,8 @@ import {ToastContainer } from "react-toastify";
 interface SheetProps {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  username: string | undefined;
-  setUsername: React.Dispatch<React.SetStateAction<string | undefined>>;
-  isUsername: boolean;
+  username: any;
+  setUsername: React.Dispatch<React.SetStateAction<any>>;
 }
 
 export default function UserEditSheet({
@@ -17,7 +16,6 @@ export default function UserEditSheet({
   setOpen,
   username,
   setUsername,
-  isUsername,
 }: SheetProps) {
   const { editUser } = useUserStore();
 
