@@ -132,7 +132,7 @@ export default function EditSheet({
                             aria-label="Project status"
                             value={category}
                             onChange={(e) => setCategory(e.target.value)}
-                            className="w-100 h-15 border outline-none p-2 text-xl  rounded-xl"
+                            className="w-100 h-15 border outline-none p-2 text-xl  rounded-xl bg-white dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500"
                           >
                             <optgroup label="None">
                               <option value="No Category">No Category</option>
@@ -224,7 +224,7 @@ export default function EditSheet({
                             aria-label="Project status"
                             value={category}
                             onChange={(e) => setCategory(e.target.value)}
-                            className="w-100 h-15 border outline-none p-2 text-xl  rounded-xl"
+                            className="w-100 h-15 border outline-none p-2 text-xl  rounded-xl bg-white dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500"
                           >
                             <optgroup label="Home">
                               <option value="Utilities">Utilities</option>
