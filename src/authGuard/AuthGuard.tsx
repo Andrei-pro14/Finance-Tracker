@@ -11,12 +11,15 @@ function AuthGuard() {
     "/reports",
     "/settings",
   ];
+  const authLogin = ["/login", "/register"];
   const navigate = useNavigate();
 
   useEffect(() => {
     const token = localStorage.getItem("accessToken");
     if (!token && authPage.includes(window.location.pathname)) {
-      navigate("/register");
+      navigate("/login");
+    } else if (token && authLogin.includes(window.location.pathname)) {
+      navigate("/");
     }
   }, [window.location.pathname]);
   return null;

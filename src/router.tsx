@@ -7,6 +7,7 @@ import Incomes from "./pages/Incomes.tsx";
 import SearchPage from "./pages/SearchPage.tsx";
 import Reports from "./pages/Reports.tsx";
 import Settings from "./pages/Settings.tsx";
+import LoginPage from "./pages/LoginPage.tsx";
 
 const route = [
   {
@@ -22,6 +23,11 @@ const route = [
   {
     path: "/register",
     element: <RegisterPage />,
+    showNavbar: false,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
     showNavbar: false,
   },
   {

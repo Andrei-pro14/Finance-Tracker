@@ -1,6 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import {PlusIcon, XIcon} from "lucide-react";
+import { PlusIcon, XIcon } from "lucide-react";
 import Sheet from "./Sheet.tsx";
 import { useExpenseStore } from "../../stores/useExpenseStore.ts";
 import { useIncomesStore } from "../../stores/useIncomesStore.ts";
@@ -68,9 +68,12 @@ export default function BalanceOverviewSheet({
                 >
                   <Dialog.Panel className="pointer-events-auto w-[500px] h-full bg-white shadow-xl p-6 border border-gray-600 dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500">
                     <Dialog.Title className="text-[28px] font-bold mt-5">
-                      <XIcon className="flex cursor-pointer" onClick={() =>{
-                        setOpen2(false)
-                      }}/>
+                      <XIcon
+                        className="flex cursor-pointer"
+                        onClick={() => {
+                          setOpen2(false);
+                        }}
+                      />
                     </Dialog.Title>
                     <div className="bg-gray-100 w-120 rounded-2xl sticky top-10 shadow-md">
                       <div className="p-6 px-10 flex flex-col gap-4">

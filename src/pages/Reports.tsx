@@ -46,7 +46,7 @@ function Reports() {
         <BalanceBox amount={balance} title={"Balance"} icon={Scale} />
       </div>
       <div className="flex flex-col w-full min-h-120 border border-gray-300 shadow-lg rounded-lg mt-10 ">
-        <span className="flex text-2xl w-full h-15 items-center border border-gray-300 border-t-0 border-l-0 border-r-0 font-semibold p-2 text-gray-700">
+        <span className="flex text-2xl w-full h-15 items-center border border-gray-300 border-t-0 border-l-0 border-r-0 font-semibold p-2 dark:text-white text-gray-700">
           Expense
         </span>
         {expense.length > 0 ? (
@@ -68,7 +68,7 @@ function Reports() {
         )}
       </div>
       <div className="flex flex-col w-full min-h-120 border border-gray-300 shadow-lg rounded-lg mt-10 ">
-        <span className="flex text-2xl w-full h-15 items-center border border-gray-300 border-t-0 border-l-0 border-r-0 font-semibold p-2 text-gray-700">
+        <span className="flex text-2xl w-full h-15 items-center border border-gray-300 border-t-0 border-l-0 border-r-0 font-semibold p-2 dark:text-white text-gray-700">
           Incomes
         </span>
         {incomes.length > 0 ? (

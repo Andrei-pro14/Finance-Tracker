@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { User2Icon } from "lucide-react";
+import { LogIn, User2Icon, UserPlus } from "lucide-react";
 import { useUserStore } from "../stores/useUserStore.ts";
 
 function LoadingPageNavbar() {
@@ -23,20 +23,27 @@ function LoadingPageNavbar() {
           }}
           className="flex px-3 py-3 rounded-4xl gap-2 font-bold hover:bg-[#FFCD1D] hover:cursor-pointer hover:scale-98 bg-white border border-gray-200 dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500"
         >
-          <User2Icon />{" "}
-          <p>
-            {user?.username}
-          </p>
+          <User2Icon /> <p>{user?.username}</p>
         </button>
       ) : (
-        <button
-          onClick={() => {
-            navigate("/register");
-          }}
-          className="flex px-4 py-2 rounded-4xl font-bold hover:bg-[#FFCD1D] hover:cursor-pointer hover:scale-98 bg-white border border-gray-200 dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500"
-        >
-          Cont nou
-        </button>
+        <div className="flex flex-row gap-3">
+          <button
+            onClick={() => {
+              navigate("/register");
+            }}
+            className="flex px-4 py-2 rounded-4xl font-bold hover:bg-[#FFCD1D] gap-2 hover:cursor-pointer hover:scale-98 bg-white border border-gray-200 dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500"
+          >
+            <UserPlus /> Register
+          </button>
+          <button
+            onClick={() => {
+              navigate("/login");
+            }}
+            className="flex px-4 py-2 rounded-4xl font-bold hover:bg-[#FFCD1D] gap-2 hover:cursor-pointer hover:scale-98 bg-white border border-gray-200 dark:bg-[#0f172a] text-black dark:text-white transition-colors duration-500"
+          >
+            <LogIn /> Log in
+          </button>
+        </div>
       )}
     </div>
   );

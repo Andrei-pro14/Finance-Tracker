@@ -1,10 +1,5 @@
 import { useUserStore } from "../stores/useUserStore.ts";
-import {
-  Bookmark,
-  Mail,
-  Pencil,
-  Settings,
-} from "lucide-react";
+import { Bookmark, Mail, Pencil, Settings } from "lucide-react";
 import { useEffect, useState } from "react";
 import UserEditSheet from "../components/slide-over/UserEditSheet.tsx";
 
@@ -24,7 +19,7 @@ function UserPage() {
           <span>
             <Settings size={30} className="text-[#85827C]" />
           </span>
-          <h1 className="flex font-semibold text-2xl">Email & Password</h1>
+          <h1 className="flex font-semibold text-2xl">Email & Username</h1>
         </div>
         <div className="flex flex-col gap-10 justify-between w-full p-8">
           <div className="flex gap-8 items-center">
@@ -37,23 +32,25 @@ function UserPage() {
             </div>
           </div>
           <div className="flex justify-between gap-8 items-center">
-           <div className="flex justify-between gap-8 items-center">
+            <div className="flex justify-between gap-8 items-center">
               <span>
-              <Bookmark />
-            </span>
-             <div className="flex flex-col">
-               <span className="text-sm">Username</span>
-               <span className="flex font-semibold text-sm">{user?.username}</span>
-             </div>
-           </div>
-            <span
-                onClick={() => {
-                  setOpen(true);
-                }}
-                className="w-8 h-8 hover:bg-gray-200 hover:text-blue-400 rounded-lg transition-all cursor-pointer flex justify-center items-center"
-            >
-                <Pencil size={20} />
+                <Bookmark />
               </span>
+              <div className="flex flex-col">
+                <span className="text-sm">Username</span>
+                <span className="flex font-semibold text-sm">
+                  {user?.username}
+                </span>
+              </div>
+            </div>
+            <span
+              onClick={() => {
+                setOpen(true);
+              }}
+              className="w-8 h-8 hover:bg-gray-200 hover:text-blue-400 rounded-lg transition-all cursor-pointer flex justify-center items-center"
+            >
+              <Pencil size={20} />
+            </span>
           </div>
         </div>
       </div>

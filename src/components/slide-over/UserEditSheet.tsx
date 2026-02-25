@@ -2,7 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { XIcon } from "lucide-react";
 import { useUserStore } from "../../stores/useUserStore.ts";
-import {ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 interface SheetProps {
   open: boolean;
@@ -56,7 +56,6 @@ export default function UserEditSheet({
                   <Dialog.Panel className="pointer-events-auto w-[500px] h-full bg-white shadow-xl p-6">
                     <Dialog.Title className="text-[28px] font-bold mt-5 flex justify-between">
                       Edit Username
-
                       <XIcon
                         onClick={() => {
                           setOpen(false);
@@ -65,33 +64,33 @@ export default function UserEditSheet({
                       />
                     </Dialog.Title>
                     <div className="w-full h-px bg-[#E0E0E0] mt-4" />
-                      <div className="flex flex-col justify-center items-center">
-                        <div className="flex flex-col py-6">
-                          <legend className="px-1">Username</legend>
-                          <input
-                            value={username}
-                            onChange={(e) => {
-                              setUsername(e.target.value);
-                            }}
-                            type="text"
-                            placeholder="Username"
-                            className="w-100 h-15 border outline-none p-2 text-xl  rounded-xl"
-                            onFocus={(e) => e.target.select()}
-                          />
-                        </div>
-
-                        <button
-                          onClick={() => {
-                            setOpen(false);
-                            editUser({
-                              username: username,
-                            });
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="flex flex-col py-6">
+                        <legend className="px-1">Username</legend>
+                        <input
+                          value={username}
+                          onChange={(e) => {
+                            setUsername(e.target.value);
                           }}
-                          className="w-85 py-2 mt-5 bg-[#FFCD1D] cursor-pointer rounded-4xl hover:scale-98 font-semibold hover:bg-[#E6B800]"
-                        >
-                          Save
-                        </button>
+                          type="text"
+                          placeholder="Username"
+                          className="w-100 h-15 border outline-none p-2 text-xl  rounded-xl"
+                          onFocus={(e) => e.target.select()}
+                        />
                       </div>
+
+                      <button
+                        onClick={() => {
+                          setOpen(false);
+                          editUser({
+                            username: username,
+                          });
+                        }}
+                        className="w-85 py-2 mt-5 bg-[#FFCD1D] cursor-pointer rounded-4xl hover:scale-98 font-semibold hover:bg-[#E6B800]"
+                      >
+                        Save
+                      </button>
+                    </div>
                   </Dialog.Panel>
                 </Transition.Child>
               </div>

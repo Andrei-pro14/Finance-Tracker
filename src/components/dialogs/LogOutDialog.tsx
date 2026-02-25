@@ -58,7 +58,7 @@ export default function LogOutDialog({
                     onClick={() => {
                       setOpenDialog(false);
                     }}
-                    className="flex px-4 py-2 rounded-lg bg-gray-500 cursor-pointer hover:scale-99"
+                    className="flex px-4 py-2 rounded-lg bg-black cursor-pointer hover:scale-99"
                   >
                     No
                   </button>
@@ -68,7 +68,7 @@ export default function LogOutDialog({
                       localStorage.removeItem("expense-storage");
                       navigate("/");
                     }}
-                    className="flex px-4 py-2 rounded-lg bg-gray-300 cursor-pointer hover:scale-99"
+                    className="flex px-4 py-2 rounded-lg bg-gray-200 cursor-pointer hover:scale-99"
                   >
                     Yes
                   </button>

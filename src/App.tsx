@@ -5,7 +5,6 @@ import AuthGuard from "./authGuard/AuthGuard.tsx";
 import { useEffect } from "react";
 
 function App() {
-
   const darkMode = localStorage.getItem("dark");
   useEffect(() => {
     if (darkMode) {

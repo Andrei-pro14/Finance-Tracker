@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"pnpm run client\" \"pnpm run server\"",
+    "dev": "pnpm run client",
     "client": "vite",
     "format": "prettier --write .",
-    "server": "json-server --watch db.json --port 5000",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
